@@ -17,7 +17,7 @@ export const projects: Project[] = [
     stack: ["React", "TypeScript", "PostgreSQL", "Supabase Auth", "Vercel"],
     color: "from-violet-500 to-fuchsia-500",
     href: "https://github.com/sheam274",
-    demo: "https://sheamportfolio.lovable.app",
+    demo: "https://sheam-nasemur-rahman-portfolio.vercel.app",
     featured: true,
   },
   {

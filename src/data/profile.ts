@@ -13,7 +13,7 @@ export const profile = {
   linkedin: "https://linkedin.com/in/sheam-nasemur-rahman",
   github: "https://github.com/sheam274",
   whatsapp: "https://wa.me/8801742218274",
-  portfolioUrl: "https://sheamportfolio.lovable.app",
+  portfolioUrl: "https://sheam-nasemur-rahman-portfolio.vercel.app",
   // Same-origin CV file served from /public. The download attribute is only
   // honored for same-origin URLs, and this path exists on any host (Vercel too).
   // Override with VITE_CV_URL to serve a different copy.

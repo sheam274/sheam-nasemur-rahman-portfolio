@@ -11,6 +11,7 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
+import { profile } from "../data/profile";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { GlassNav } from "../components/GlassNav";
 import { UrgentContactDock } from "../components/UrgentContactDock";
@@ -67,15 +68,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Sheam Nasemur Rahman — Full‑Stack Software Developer | React, TypeScript, Node.js" },
       { property: "og:description", content: "Portfolio of MD. Sheam Nasemur Rahman — Full‑Stack Software Developer, BSc in CSE. Open to full‑time and freelance roles." },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: profile.portfolioUrl },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Sheam Nasemur Rahman — Full‑Stack Software Developer | React, TypeScript, Node.js" },
       { name: "twitter:description", content: "Portfolio of MD. Sheam Nasemur Rahman — Full‑Stack Software Developer, BSc in CSE. Open to full‑time and freelance roles." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3643eadf-a24e-476c-a6cf-9473be68db0a/id-preview-753b37dd--9e6817c0-c31c-4eda-aa95-b1aa6ef3baa5.lovable.app-1783066576332.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3643eadf-a24e-476c-a6cf-9473be68db0a/id-preview-753b37dd--9e6817c0-c31c-4eda-aa95-b1aa6ef3baa5.lovable.app-1783066576332.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "canonical", href: "https://sheam-nasemur-rahman.lovable.app/" },
+      { rel: "canonical", href: profile.portfolioUrl },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" },
